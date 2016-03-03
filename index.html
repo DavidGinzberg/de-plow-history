@@ -19,7 +19,7 @@
 
 var plow_data = [];
 
-$.ajax("data/196740.json", {
+$.ajax("data/201054.json", {
   "method": "GET",
   "success": function(data){
     console.log("Got the data");
@@ -61,7 +61,7 @@ function add() {
 
     // Continue to draw and pan the map by calling `add()`
     // until `pointsAdded` reaches 360.
-    if (++pointsAdded < 360) window.setTimeout(add, 100);
+    if (++pointsAdded < 1000) window.setTimeout(add, 100);
 }
 </script>
 </body>
